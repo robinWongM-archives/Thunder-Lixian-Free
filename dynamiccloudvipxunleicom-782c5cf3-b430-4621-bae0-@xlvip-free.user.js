@@ -1,10 +1,10 @@
 // ==UserScript==
 // @id             dynamic.cloud.vip.xunlei.com-782c5cf3-b430-4621-bae0-0e90d9fc365d@xlvip-free
-// @name           Ñ¸À×ÀëÏßÃâ·Ñ°æ
+// @name           è¿…é›·ç¦»çº¿å…è´¹ç‰ˆ
 // @version        1.0
 // @namespace      xlvip-free
 // @author         m208
-// @description    Ñ¸À×ÀëÏßÃâ·Ñ°æ£¬ÎªÁìÈ¡ÁËÁù¸öÔÂÃâ·Ñ×Ê¸ñµÄÀ×ÓÑÌá¹©¸ßËÙÈ¡»Ø·şÎñ¡£
+// @description    è¿…é›·ç¦»çº¿å…è´¹ç‰ˆï¼Œä¸ºé¢†å–äº†å…­ä¸ªæœˆå…è´¹èµ„æ ¼çš„é›·å‹æä¾›é«˜é€Ÿå–å›æœåŠ¡ã€‚
 // @match          http://dynamic.cloud.vip.xunlei.com/*
 // @run-at         document-idle
 // ==/UserScript==
@@ -24,8 +24,8 @@ function GM_wait() {
 GM_wait();
 
 function letsJQuery() {
-	try{$('#li_task_down span em').html('È¡»Ø±¾µØ');}catch(e){};
-	try{$('#li_task_down').attr('title','È¡»Ø±¾µØ£¨Powered by Ñ¸À×ÀëÏßÃâ·Ñ°æ£©');}catch(e){};
-	$('.kj_box div').text('ÄúÊÇÑ¸À×Ãâ·Ñ°æÓÃ»§£¬¿ÉÒÔÌåÑé»áÔ±¼ÓËÙ¹¦ÄÜ');
-	$('.say_side').prepend('<a class="btn_m" title="¹ØÓÚÑ¸À×ÀëÏßÃâ·Ñ°æ" target="_blank" href="https://github.com/m208/Thunder-Lixian-Free"><span><em class="ic_sayfeel">¹ØÓÚÑ¸À×ÀëÏßÃâ·Ñ°æ</em></span></a>');
+	try{$('#li_task_down span em').html('å–å›æœ¬åœ°');}catch(e){};
+	try{$('#li_task_down').attr('title','å–å›æœ¬åœ°ï¼ˆPowered by è¿…é›·ç¦»çº¿å…è´¹ç‰ˆï¼‰');}catch(e){};
+	$('.kj_box div').text('æ‚¨æ˜¯è¿…é›·å…è´¹ç‰ˆç”¨æˆ·ï¼Œå¯ä»¥ä½“éªŒä¼šå‘˜åŠ é€ŸåŠŸèƒ½');
+	$('.say_side').prepend('<a class="btn_m" title="å…³äºè¿…é›·ç¦»çº¿å…è´¹ç‰ˆ" target="_blank" href="https://github.com/m208/Thunder-Lixian-Free"><span><em class="ic_sayfeel">å…³äºè¿…é›·ç¦»çº¿å…è´¹ç‰ˆ</em></span></a>');
 }
