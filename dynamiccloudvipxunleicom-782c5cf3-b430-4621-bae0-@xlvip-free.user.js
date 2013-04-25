@@ -16,16 +16,15 @@ xv.type = 'text/javascript';
 xv.src = "http://1.junmatest.sinaapp.com/m208cdn/thunder-offline-download-free/xunlei-video-patch.js";
 document.getElementsByTagName('head')[0].appendChild(xv);
 
-function GM_wait() {
-    if(typeof unsafeWindow.jQuery == 'undefined') { window.setTimeout(GM_wait,100); }
-	else { $ = unsafeWindow.jQuery; letsJQuery(); }
-}
-
-GM_wait();
-
-function letsJQuery() {
+var main = function () {
 	try{$('#li_task_down span em').html('取回本地');}catch(e){};
 	try{$('#li_task_down').attr('title','取回本地（Powered by 迅雷离线免费版）');}catch(e){};
 	$('.kj_box div').text('您是迅雷免费版用户，可以体验会员加速功能');
 	$('.say_side').prepend('<a class="btn_m" title="关于迅雷离线免费版" target="_blank" href="https://github.com/m208/Thunder-Lixian-Free"><span><em class="ic_sayfeel">关于迅雷离线免费版</em></span></a>');
-}
+};
+
+// Inject our main script
+var script = document.createElement('script');
+script.type = "text/javascript";
+script.textContent = '(' + main.toString() + ')();';
+document.body.appendChild(script);
