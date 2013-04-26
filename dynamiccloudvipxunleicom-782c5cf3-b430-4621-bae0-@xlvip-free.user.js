@@ -21,7 +21,7 @@ var main = function () {
 	try{$('#li_task_down span em').html('取回本地');}catch(e){};
 	try{$('#li_task_down').attr('title','取回本地（Powered by 迅雷离线免费版）');}catch(e){};
 	$('.kj_box div').text('您是迅雷免费版用户，可以体验会员加速功能');
-	$('.say_side').prepend('<a class="btn_m" title="检查更新（迅雷离线免费版）" target="_blank" href="https://github.com/m208/Thunder-Lixian-Free"><span><em class="ic_sayfeel">关于迅雷离线免费版</em></span></a>');
+	$('.say_side').prepend('<a class="btn_m" title="Chrome用户点此检查更新（迅雷离线免费版）" target="_blank" href="https://github.com/m208/Thunder-Lixian-Free"><span><em class="ic_sayfeel">关于迅雷离线免费版</em></span></a>');
 };
 
 // Inject our main script
